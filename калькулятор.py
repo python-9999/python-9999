@@ -1,27 +1,27 @@
 def add():
     print('command or "exit".')
     while True:
-       i = input('>>>')
+       user_input = input('>>>')
 
-       if i == 'add+':
+       if user_input == 'add+':
            a, b = int(input('num 1: ')), int(input('num 2: '))
            print(f'={a+b}')
 
-       elif i == 'add*':
+       elif user_input == 'add*':
            a, b = int(input('num 1: ')), int(input('num 2: '))
            print(f'={a*b}')
 
-       elif i == 'help':
+       elif user_input == 'help':
            print('command (3):\nadd+\nadd*\nexit')
 
-       elif i == 'exit':
+       elif user_input == 'exit':
            break
 
 try:  
-    user_input = int(input('1.add\n>>>'))
-    if user_input == 1:
+    user_input2 = int(input('1.add\n>>>'))
+    if user_input2 == 1:
         add()
-    elif user_input == '0':
+    elif user_input2 == '0':
         pass
     else:
         print('ошибка. (внутри блока user_input)')
